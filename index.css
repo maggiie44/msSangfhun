@@ -1,0 +1,166 @@
+*{font-family: Noto Sans Thai;}
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+
+a{
+  color: white ; 
+}
+a:link{
+    text-decoration: none;
+}
+.nav-bar a:visited  {
+  color: white;
+}
+.nav-link{
+  color: white !important;
+}
+.nav-link:hover{
+  background-color: #333f6d;
+}
+
+
+.innerblog a {
+  color: black;
+}
+.innerblog a:visited {
+  color: black;
+}
+.innerblog a:visited h5 {
+  color: black;
+}
+
+.logo-ms{
+  height: 5rem;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.nav-bar{
+    background-color:#273053;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 6rem;
+    padding: 10px 0;
+   
+}
+
+
+
+
+.container{
+margin: 50px 0;
+}
+
+
+
+.blog-wrapper img{
+  width: 100%;
+ 
+}
+
+.slide-wrapper{
+  margin-bottom: 50px;
+}
+
+
+.carousel-img{
+  display: block;
+  width: 100%;
+  height: 500px;
+}
+
+.innerblog{
+  height: 250px;
+  margin-bottom: 100px;
+}
+
+.blogitem{
+  height: 500px;
+  margin-right: 20px;
+  width: 100%;
+
+}
+
+.blog-side{
+  height: 500px;
+
+}
+
+.sideblog-wrapper{
+  height: 10px;
+}
+
+.sideblogitem{
+  height: 250px;
+  margin-right: 20px;
+  width: 100%;
+}
+
+.card-wrapper{
+  justify-content: center;
+  display: flex;
+  margin: 20px;
+}
+.card-item{
+  margin: 20px;
+}
+
+.card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  border-radius: 0;
+}
+
+
+.img-wrapper{
+  height: auto;
+}
+
+
+.card-sec{
+  height: 450px;
+}
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+
+footer{
+  margin-top: 40px;
+  border-top: 1px solid black;
+  height: 100px;
+  background-color: #273053;
+  color: white;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+footer a {
+  margin-left: 10px;
+}
+
+.social-logo{
+  height: 16px;
+  width: 16px;
+  filter: invert(100%);
+}
+.logo-footer{
+  height: 90px;
+}
+
+
+@media (max-width: 575px) { 
+  .col-sm-12{
+    width: 100%;
+  }
+ }

@@ -1,0 +1,174 @@
+html{
+  height: 100%;
+}
+body {
+    font-family: "Lato", sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  header {
+    
+  }
+  
+  /* Fixed sidenav, full height */
+  .sidenav {
+    height: 50%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    overflow-x: hidden;
+    padding-top: 20px;
+    margin: 100px 0 ;
+  }
+  
+  /* Style the sidenav links and the dropdown button */
+  .sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+ 
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* On mouse-over */
+  .sidenav a:hover, .dropdown-btn:hover {
+    background-color:#818181 ;
+    color: #f1f1f1;
+  }
+  .main-contain{
+    flex: 1 0 auto;
+  }
+  /* Main content */
+  /* .main { */
+     /* Same as the width of the sidenav */
+     /* Increased text to enable scrolling */
+    /* padding: 0px 10px;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  } */
+  
+  /* Add an active class to the active dropdown button */
+  .active {
+    background-color: rgb(146, 151, 146);
+    color: white;
+  }
+  
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .dropdown-container {
+    display: none;
+    
+    padding-left: 8px;
+  }
+  
+  /* Optional: Style the caret down icon */
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
+  
+  /* Some media queries for responsiveness */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  .card{
+    margin: 20px;
+  }
+
+
+
+  *{font-family: Noto Sans Thai;}
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+
+a{
+  color: white;
+}
+a:link{
+    text-decoration: none;
+}
+.nav-bar a:visited  {
+  color: white;
+}
+.nav-link:hover{
+  background-color: #333f6d;
+}
+
+.innerblog a:visited {
+  color: black;
+}
+.innerblog a:visited h5 {
+  color: black;
+}
+
+.logo-ms{
+  height: 5rem;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.nav-bar{
+    background-color:#273053;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 6rem;
+    padding: 10px 0;
+    flex: 0 0 auto;
+   
+}
+
+
+footer{
+    margin: 0 10px;
+    border-top: 1px solid black;
+    height: 100px;
+    background-color: #273053;
+    color: white;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    
+  }
+  footer a {
+    margin-left: 10px;
+  }
+  
+  .social-logo{
+    height: 16px;
+    width: 16px;
+    filter: invert(100%);
+  }
+  .logo-footer{
+    height: 90px;
+  }
+
+  .container h2{
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .card-wrapper{
+    margin-left: 50px;
+  }
+
+

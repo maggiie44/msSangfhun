@@ -1,0 +1,93 @@
+*{font-family: Noto Sans Thai;}
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+
+a{
+  color: white;
+}
+a:link{
+    text-decoration: none;
+}
+.nav-bar a:visited  {
+  color: white;
+}
+.nav-link:hover{
+  background-color: #333f6d;
+}
+
+.innerblog a:visited {
+  color: black;
+}
+.innerblog a:visited h5 {
+  color: black;
+}
+
+.logo-ms{
+  height: 5rem;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.nav-bar{
+    background-color:#273053;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 6rem;
+    padding: 10px 0;
+   
+}
+
+.container img{
+    margin: 50px auto;
+
+    width: 500px;
+    height: 500px;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+
+}
+.container h2 {
+    text-align: left;
+}
+
+
+
+footer{
+    margin: 0 10px;
+    border-top: 1px solid black;
+    height: 100px;
+    background-color: #273053;
+    color: white;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+  }
+  footer a {
+    margin-left: 10px;
+  }
+  
+  .social-logo{
+    height: 16px;
+    width: 16px;
+    filter: invert(100%);
+  }
+  .logo-footer{
+    height: 90px;
+  }
+
+  .container h2{
+    margin-top: 20px;
+    text-align: center;
+  }
