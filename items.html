@@ -16,7 +16,7 @@
 
 <body>
   <header>
-  <div class="nav-bar ">
+  <div class="nav-bar">
     <ul class="nav">
       <li>
         <img class="logo-ms" src="./img/My T-Shirt Worksheet in Green White Basic Style (1) - แก้ไขแล้ว.png" alt="">
@@ -39,6 +39,19 @@
       </li>
     </ul>
   </div>
+  <div class="topnav">
+    <a href="#home" class="active"><img class="" src="" alt=""></a>
+    <div id="myLinks">
+      <a class="nav-link " href="./items.html">course</a>
+      <a class="nav-link" href="#">Review</a>
+      <a class="nav-link" href="./blogs.html">blog</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+
   <div>
     <ul class="top-cat">
       <li>
@@ -199,6 +212,17 @@
         }
       });
     }
+
+
+function myFunction() {
+  let x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
   </script>
 
 </body>
