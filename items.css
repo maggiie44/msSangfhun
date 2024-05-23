@@ -23,6 +23,10 @@ body {
     overflow-x: hidden;
     padding-top: 20px;
     margin: 100px 0 ;
+    text-decoration: none;
+  }
+  .sidenav li{
+    list-style: none;
   }
   
   /* Style the sidenav links and the dropdown button */
@@ -78,18 +82,47 @@ body {
   }
   
   /* Some media queries for responsiveness */
-  @media screen and (max-height: 450px) {
+  /* @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
-  }
+  } */
   .card{
     margin: 20px;
   }
 
+  @media (max-width: 768px) {
+    .sidenav{
+      display: none;
+    }
+  }
+.top-cat{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  
+  margin-top: 20px;
+
+}
+.top-cat li{
+  margin: 0 10px;
+  list-style: none;
+  border-bottom: 0.01rem solid black;
+}
+
+.top-cat li a {
+  color: black;
+}
+
+@media (min-width: 769px){
+  .top-cat{
+    display: none;
+  }
+}
+
 
 
   *{font-family: Noto Sans Thai;}
-ul {
+.nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -147,11 +180,17 @@ footer{
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
-    
   }
   footer a {
     margin-left: 10px;
   }
+  footer ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+  }
+
   
   .social-logo{
     height: 16px;

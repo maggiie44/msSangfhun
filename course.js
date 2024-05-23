@@ -1,40 +1,45 @@
 const courses = [
     {
         id: 1,
-        title : "Somethime",
-        category : "primary",
+        title : "Something",
+        subject : "math",
+        category : "1",
         detail : "something",
         img : "#",
         price : "0",
     },
     {
         id: 2,
-        title : "Somethime2",
-        category : "primary",
+        title : "Something2",
+        subject : "since",
+        category : "2",
         detail : "something",
         img : "#",
         price : "0",
     },
     {
         id: 3,
-        title : "Somethime3",
-        category : "primary",
+        title : "Something3",
+        subject : "phys",
+        category : "1",
         detail : "something",
         img : "#",
         price : "0",
     },
     {
         id: 4,
-        title : "Somethime4",
-        category : "primary",
+        title : "Something4",
+        subject : "chemist",
+        category : "3",
         detail : "something",
         img : "#",
         price : "0",
     },
     {
         id: 5,
-        title : "Somethime5",
-        category : "primary",
+        title : "Something5",
+        subject : "eng",
+        category : "1",
         detail : "something",
         img : "#",
         price : "0",
@@ -42,8 +47,15 @@ const courses = [
 ]
 
 
+
+
+
+
 const courseWrapper = document.querySelector(".card-wrapper")
-window.addEventListener("DOMContentLoaded", () =>{
+const linkEL = document.querySelectorAll(".catLink")
+
+// display all course
+const displayCourseData = (courses) =>{
     let displayData = courses.map(function (course){
         return `<div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="card" style="width: 18rem;">
@@ -55,11 +67,37 @@ window.addEventListener("DOMContentLoaded", () =>{
                     </div>
                     </div>
                 </div>`;
-    })
 
-    console.log(displayData);
+    })
     displayData = displayData.join("")
     courseWrapper.innerHTML = displayData
+}
 
-    
+window.addEventListener("DOMContentLoaded", () =>{
+
+    displayCourseData(courses)
+    // console.log(displayData);
+ 
 })
+
+linkEL.forEach((links) => {
+    links.addEventListener("click", (e)=>{
+        const category = e.target.dataset.id;
+        console.log(category);
+        e.preventDefault();
+        const courseCat = courses.filter(function (courses){
+            if(courses.category === category){
+                return courses
+            }
+        })
+       console.log(courseCat); 
+       if(category === "all"){
+           displayCourseData(courses)
+       }else{
+           displayCourseData(courseCat)
+       }
+    })
+});
+
+
+
