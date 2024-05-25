@@ -57,13 +57,13 @@ const linkEL = document.querySelectorAll(".catLink")
 // display all course
 const displayCourseData = (courses) =>{
     let displayData = courses.map(function (course){
-        return `<div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="card" style="width: 18rem;">
+        return `<div class="col-lg-3 col-md-6 col-sm-12 inner-card">
+                    <div class="card" >
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">${course.title}</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="./item${course.id}.html" class="btn btn-primary">Go somewhere</a>
                     </div>
                     </div>
                 </div>`;
