@@ -88,11 +88,23 @@ body {
   .card{
     margin: 20px;
   }
+  .card-wrapper{
+    margin-left: 100px;
+  }
 
   @media (max-width: 768px) {
     .sidenav{
       display: none;
     }
+    .card-wrapper{
+      margin-left: 0px;
+    }
+  }
+  @media (max-width: 320px) {
+    .nav a{
+      display: none;
+    }
+
   }
 
   @media (max-width: 768px) {
@@ -125,6 +137,7 @@ body {
   .top-cat{
     display: none;
   }
+
 }
 
 
@@ -216,9 +229,7 @@ footer{
     text-align: center;
   }
 
-  .card-wrapper{
-    margin-left: 50px;
-  }
+ 
 
 
 
@@ -269,10 +280,20 @@ footer{
     background-color: #273053;
     color: white;
   }
-  @media (min-width: 769px){
+  @media (min-width: 321px){
     .topnav{
       display: none;
     }
   }
 
   /*  */
+
+  .card {
+    margin: 0 20px;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+    border-radius: 0;
+  }
+  .inner-card{
+    margin: 20px 0;
+  }
