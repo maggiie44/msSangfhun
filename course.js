@@ -57,8 +57,8 @@ const linkEL = document.querySelectorAll(".catLink")
 // display all course
 const displayCourseData = (courses) =>{
     let displayData = courses.map(function (course){
-        return `<div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="card" style="width: 18rem;">
+        return `<div class="col-lg-4 col-md-6 col-sm-12 card-item">
+                    <div class="card" style="">
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">${course.title}</h5>
