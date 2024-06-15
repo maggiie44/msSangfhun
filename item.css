@@ -55,21 +55,24 @@ a:link{
     margin-top: 50px;
 }
 .course-img{
-    height: 300px;
-    width: 300px;
+    height: auto;
+    width: auto;
     margin: 50px;
     display: flex;
 }
 .content-wrapper{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 .content-wrapper li{
     margin-bottom:60px;
 
 }
 
-
+.content-wrapper li{
+  font-size: 20px;
+}
 
 
 

@@ -1,49 +1,30 @@
 const courses = [
     {
         id: 1,
-        title : "Something",
-        subject : "math",
-        category : "1",
-        detail : "something",
-        img : "#",
+        title : "คอร์สเรียน ระดับชั้นประถม",
+        category : "primary",
+        detail : "คอร์สเรียน สำหรับ ระดับชั้นประถม วิชา คณิต วิทย์ อังกฤษ ไทย สังคม",
+        img : "./img/course/1.svg",
         price : "0",
     },
     {
         id: 2,
-        title : "Something2",
-        subject : "since",
-        category : "2",
-        detail : "something",
-        img : "#",
+        title : "คอร์สเรียน ระดับชั้นมัธยมต้น",
+        
+        category : "middle",
+        detail : "คอร์สเรียน สำหรับ ระดับชั้นมัธยมต้น วิชา คณิต วิทย์ อังกฤษ ไทย สังคม",
+        img : "./img/course/2.svg",
         price : "0",
     },
     {
         id: 3,
-        title : "Something3",
-        subject : "phys",
-        category : "1",
-        detail : "something",
-        img : "#",
+        title : "คอร์สเรียน ระดับชั้นมัธยมปลาย",
+        category : "high",
+        detail : "คอร์สเรียน สำหรับระดับชั้นมัธยมปลาย ติวเข้ม คณิต ฟิสิกส์ เคมี ชีวะ อังกฤษ",
+        img : "./img/course/3.svg",
         price : "0",
     },
-    {
-        id: 4,
-        title : "Something4",
-        subject : "chemist",
-        category : "3",
-        detail : "something",
-        img : "#",
-        price : "0",
-    },
-    {
-        id: 5,
-        title : "Something5",
-        subject : "eng",
-        category : "1",
-        detail : "something",
-        img : "#",
-        price : "0",
-    },
+
 ]
 
 
@@ -59,11 +40,11 @@ const displayCourseData = (courses) =>{
     let displayData = courses.map(function (course){
         return `<div class="col-lg-4 col-md-6 col-sm-12 card-item">
                     <div class="card" style="">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="${course.img}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">${course.title}</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="./item.html" class="btn btn-primary">Detail</a>
+                        <p class="card-text">${course.detail}</p>
+                        <a href="./item${course.id}.html" class="btn btn-primary">เพิ่มเติม</a>
                     </div>
                     </div>
                 </div>`;
